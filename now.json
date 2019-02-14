@@ -1,0 +1,18 @@
+{
+    "version": 2,
+    "name": "wmdd-get-w6",
+    "env": {
+      "DBHOST": "",
+      "DBPORT": "3306",
+      "DBUSER": "",
+      "DBPASSWORD": "",
+      "DBNAME": "movies"
+    },
+    "builds": [
+      { "src": "index.js", "use": "@now/node" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "/index.js" }
+    ]
+  }
+  
